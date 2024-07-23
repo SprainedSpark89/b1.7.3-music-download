@@ -18,10 +18,12 @@
             padding: 0;
         }
         .container {
-            width: 2000%;
-            max-width: 50%;
-            margin: 20px auto;
-            padding: 20px;
+            width: 10%;
+            max-width: 10%;
+			height: 10%;
+			max-height 10%;
+            margin: 0px auto;
+            padding: 0px;
             background-color: #322418;
             border: 1px solid #000;
             display: table; /* Using table display for older IE support */
@@ -38,7 +40,7 @@
         }
         .download-btn {
             display: block;
-            margin: 20px auto;
+            margin: 0px auto;
             padding: 10px;
             width: 400px;
             height: 40px;
@@ -53,14 +55,14 @@
         }
         #cube-container {
             display: table-cell;
-            padding-top: 100px;
-            width: 25%;
-            height: 5%;
+            padding-top: 0px;
+            width: 10%;
+            height: 10%;
         }
         .text-container {
             display: table-cell;
             width: 40%;
-            padding-left: 20px;
+            padding-left: 0px;
         }
         canvas {
             display: block;
@@ -101,7 +103,7 @@
         var camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
         var renderer = new THREE.WebGLRenderer({ alpha: true });
         renderer.setClearColor(0x000000, 0); // transparent background
-        renderer.setSize(400, 400);
+        renderer.setSize(200, 200);
         document.getElementById('cube-container').appendChild(renderer.domElement);
 
         // Load textures with nearest filter
