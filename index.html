@@ -18,14 +18,15 @@
             padding: 0;
         }
         .container {
-            width: 100%;
-            max-width: 1300px;
+            width: 2000%;
+            max-width: 50%;
             margin: 20px auto;
             padding: 20px;
             background-color: #322418;
             border: 1px solid #000;
             display: table; /* Using table display for older IE support */
         }
+
         h1 {
             color: #FFFFFF;
             text-align: left;
@@ -52,9 +53,9 @@
         }
         #cube-container {
             display: table-cell;
-            width: 50%;
-            height: 400px;
-            margin-right: 20px;
+            padding-top: 100px;
+            width: 25%;
+            height: 5%;
         }
         .text-container {
             display: table-cell;
@@ -127,7 +128,7 @@
             new THREE.MeshBasicMaterial({ map: sideTexture }), // front
             new THREE.MeshBasicMaterial({ map: sideTexture })  // back
         ];
-        var geometry = new THREE.BoxGeometry(3.5, 3.5, 3.5); // increase the size of the cube
+        var geometry = new THREE.BoxGeometry(2.5, 2.5, 2.5); // increase the size of the cube
         var cube = new THREE.Mesh(geometry, materials);
         scene.add(cube);
 
